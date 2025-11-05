@@ -3,13 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="weather.css">
 </head>
 <body>
-    <input id="input" placeholder="Введите координаты"><br>
-    <button id="show">Показать погоду</button> 
-    <div id="container-city"></div>   
+    <div class="container">
+        <h1>Погода</h1>        
+        <div class="input-section">
+            <input id="input" placeholder="Введите координаты (широта,долгота)" type="text"><br>
+            <button id="show">Показать погоду</button>
+        </div>
+
+        <div class="cities-section">
+            <div class="cities-buttons">
+                <button class="city-btn" data-city="Минск">Минск</button>
+                <button class="city-btn" data-city="Москва">Москва</button>
+                <button class="city-btn" data-city="Париж">Париж</button>
+                <button class="city-btn" data-city="Лондон">Лондон</button>
+                <button class="city-btn" data-city="Мадрид">Мадрид</button>
+                <button class="city-btn" data-city="Нью-Йорк">Нью-Йорк</button>
+                <button class="city-btn" data-city="Пекин">Пекин</button>
+                <button class="city-btn" data-city="Токио">Токио</button>
+                <button class="city-btn" data-city="Берлин">Берлин</button>
+                <button class="city-btn" data-city="Рим">Рим</button>
+            </div>
+        </div>
+        <div id="container-city" class="weather-container"></div>
+    </div>
 </body>
 <script src="weather.js"></script>
 </html>
